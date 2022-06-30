@@ -184,7 +184,7 @@ def compute_plag(directory):
 
         if(len(format_f)>1 and format_f[1] == "companion.ml"):
             continue
-        companion_name = fname_str+"_companion.ml"
+        companion_name = fname_str.split('.')[0]+"_companion.ml"
         
         duple = plagiarismCheck(fname_str,companion_name)
     
@@ -207,7 +207,7 @@ def compute_plag(directory):
             copy_file.write(str_)
     
 
-compute_plag("/home/abhinav/Desktop/mitacs/code/mini/modified_files/hw1")
+compute_plag("/home/abhinav/Desktop/mitacs/code/mini/m-Moss/modified_files")
         
 
 
